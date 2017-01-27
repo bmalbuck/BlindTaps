@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0D1B3CF1E3BCA03001EC57B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1B3CE1E3BCA03001EC57B /* AppDelegate.swift */; };
+		D0D1B3D11E3BCA03001EC57B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1B3D01E3BCA03001EC57B /* ViewController.swift */; };
+		D0D1B3D41E3BCA03001EC57B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D1B3D21E3BCA03001EC57B /* Main.storyboard */; };
+		D0D1B3D61E3BCA03001EC57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D1B3D51E3BCA03001EC57B /* Assets.xcassets */; };
+		D0D1B3D91E3BCA03001EC57B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D1B3D71E3BCA03001EC57B /* LaunchScreen.storyboard */; };
+		D0D1B3DE1E3BCA03001EC57B /* BlindTaps WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D0D1B3DD1E3BCA03001EC57B /* BlindTaps WatchKit App.app */; };
+		D0D1B3E41E3BCA03001EC57B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D1B3E21E3BCA03001EC57B /* Interface.storyboard */; };
+		D0D1B3E61E3BCA03001EC57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D1B3E51E3BCA03001EC57B /* Assets.xcassets */; };
+		D0D1B3ED1E3BCA03001EC57B /* BlindTaps WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D0D1B3EC1E3BCA03001EC57B /* BlindTaps WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D0D1B3F41E3BCA03001EC57B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1B3F31E3BCA03001EC57B /* InterfaceController.swift */; };
+		D0D1B3F61E3BCA03001EC57B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1B3F51E3BCA03001EC57B /* ExtensionDelegate.swift */; };
+		D0D1B3F81E3BCA03001EC57B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1B3F71E3BCA03001EC57B /* NotificationController.swift */; };
+		D0D1B3FA1E3BCA03001EC57B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D1B3F91E3BCA03001EC57B /* ComplicationController.swift */; };
+		D0D1B3FC1E3BCA03001EC57B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D1B3FB1E3BCA03001EC57B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0D1B3DF1E3BCA03001EC57B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D1B3C31E3BCA03001EC57B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D1B3DC1E3BCA03001EC57B;
+			remoteInfo = "BlindTaps WatchKit App";
+		};
+		D0D1B3EE1E3BCA03001EC57B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D1B3C31E3BCA03001EC57B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D1B3EB1E3BCA03001EC57B;
+			remoteInfo = "BlindTaps WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D0D1B4031E3BCA03001EC57B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D0D1B3ED1E3BCA03001EC57B /* BlindTaps WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1B4071E3BCA03001EC57B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D0D1B3DE1E3BCA03001EC57B /* BlindTaps WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D0D1B3CB1E3BCA03001EC57B /* BlindTaps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindTaps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D1B3CE1E3BCA03001EC57B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D0D1B3D01E3BCA03001EC57B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D0D1B3D31E3BCA03001EC57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0D1B3D51E3BCA03001EC57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0D1B3D81E3BCA03001EC57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0D1B3DA1E3BCA03001EC57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D1B3DD1E3BCA03001EC57B /* BlindTaps WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BlindTaps WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D1B3E31E3BCA03001EC57B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D0D1B3E51E3BCA03001EC57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0D1B3E71E3BCA03001EC57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D1B3EC1E3BCA03001EC57B /* BlindTaps WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BlindTaps WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D1B3F21E3BCA03001EC57B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D0D1B3F31E3BCA03001EC57B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D0D1B3F51E3BCA03001EC57B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D0D1B3F71E3BCA03001EC57B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D0D1B3F91E3BCA03001EC57B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D0D1B3FB1E3BCA03001EC57B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0D1B3FD1E3BCA03001EC57B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0D1B3C81E3BCA03001EC57B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1B3E91E3BCA03001EC57B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0D1B3C21E3BCA03001EC57B = {
+			isa = PBXGroup;
+			children = (
+				D0D1B3CD1E3BCA03001EC57B /* BlindTaps */,
+				D0D1B3E11E3BCA03001EC57B /* BlindTaps WatchKit App */,
+				D0D1B3F01E3BCA03001EC57B /* BlindTaps WatchKit Extension */,
+				D0D1B3CC1E3BCA03001EC57B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D1B3CC1E3BCA03001EC57B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1B3CB1E3BCA03001EC57B /* BlindTaps.app */,
+				D0D1B3DD1E3BCA03001EC57B /* BlindTaps WatchKit App.app */,
+				D0D1B3EC1E3BCA03001EC57B /* BlindTaps WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0D1B3CD1E3BCA03001EC57B /* BlindTaps */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1B3CE1E3BCA03001EC57B /* AppDelegate.swift */,
+				D0D1B3D01E3BCA03001EC57B /* ViewController.swift */,
+				D0D1B3D21E3BCA03001EC57B /* Main.storyboard */,
+				D0D1B3D51E3BCA03001EC57B /* Assets.xcassets */,
+				D0D1B3D71E3BCA03001EC57B /* LaunchScreen.storyboard */,
+				D0D1B3DA1E3BCA03001EC57B /* Info.plist */,
+			);
+			path = BlindTaps;
+			sourceTree = "<group>";
+		};
+		D0D1B3E11E3BCA03001EC57B /* BlindTaps WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1B3E21E3BCA03001EC57B /* Interface.storyboard */,
+				D0D1B3E51E3BCA03001EC57B /* Assets.xcassets */,
+				D0D1B3E71E3BCA03001EC57B /* Info.plist */,
+			);
+			path = "BlindTaps WatchKit App";
+			sourceTree = "<group>";
+		};
+		D0D1B3F01E3BCA03001EC57B /* BlindTaps WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1B3F31E3BCA03001EC57B /* InterfaceController.swift */,
+				D0D1B3F51E3BCA03001EC57B /* ExtensionDelegate.swift */,
+				D0D1B3F71E3BCA03001EC57B /* NotificationController.swift */,
+				D0D1B3F91E3BCA03001EC57B /* ComplicationController.swift */,
+				D0D1B3FB1E3BCA03001EC57B /* Assets.xcassets */,
+				D0D1B3FD1E3BCA03001EC57B /* Info.plist */,
+				D0D1B3F11E3BCA03001EC57B /* Supporting Files */,
+			);
+			path = "BlindTaps WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D0D1B3F11E3BCA03001EC57B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0D1B3F21E3BCA03001EC57B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D1B3CA1E3BCA03001EC57B /* BlindTaps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D1B4081E3BCA03001EC57B /* Build configuration list for PBXNativeTarget "BlindTaps" */;
+			buildPhases = (
+				D0D1B3C71E3BCA03001EC57B /* Sources */,
+				D0D1B3C81E3BCA03001EC57B /* Frameworks */,
+				D0D1B3C91E3BCA03001EC57B /* Resources */,
+				D0D1B4071E3BCA03001EC57B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D1B3E01E3BCA03001EC57B /* PBXTargetDependency */,
+			);
+			name = BlindTaps;
+			productName = BlindTaps;
+			productReference = D0D1B3CB1E3BCA03001EC57B /* BlindTaps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0D1B3DC1E3BCA03001EC57B /* BlindTaps WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D1B4041E3BCA03001EC57B /* Build configuration list for PBXNativeTarget "BlindTaps WatchKit App" */;
+			buildPhases = (
+				D0D1B3DB1E3BCA03001EC57B /* Resources */,
+				D0D1B4031E3BCA03001EC57B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D1B3EF1E3BCA03001EC57B /* PBXTargetDependency */,
+			);
+			name = "BlindTaps WatchKit App";
+			productName = "BlindTaps WatchKit App";
+			productReference = D0D1B3DD1E3BCA03001EC57B /* BlindTaps WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D0D1B3EB1E3BCA03001EC57B /* BlindTaps WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D1B4001E3BCA03001EC57B /* Build configuration list for PBXNativeTarget "BlindTaps WatchKit Extension" */;
+			buildPhases = (
+				D0D1B3E81E3BCA03001EC57B /* Sources */,
+				D0D1B3E91E3BCA03001EC57B /* Frameworks */,
+				D0D1B3EA1E3BCA03001EC57B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BlindTaps WatchKit Extension";
+			productName = "BlindTaps WatchKit Extension";
+			productReference = D0D1B3EC1E3BCA03001EC57B /* BlindTaps WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D1B3C31E3BCA03001EC57B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Brian Buck";
+				TargetAttributes = {
+					D0D1B3CA1E3BCA03001EC57B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3HPBXSSCP4;
+						ProvisioningStyle = Automatic;
+					};
+					D0D1B3DC1E3BCA03001EC57B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3HPBXSSCP4;
+						ProvisioningStyle = Automatic;
+					};
+					D0D1B3EB1E3BCA03001EC57B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 3HPBXSSCP4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D0D1B3C61E3BCA03001EC57B /* Build configuration list for PBXProject "BlindTaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0D1B3C21E3BCA03001EC57B;
+			productRefGroup = D0D1B3CC1E3BCA03001EC57B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D1B3CA1E3BCA03001EC57B /* BlindTaps */,
+				D0D1B3DC1E3BCA03001EC57B /* BlindTaps WatchKit App */,
+				D0D1B3EB1E3BCA03001EC57B /* BlindTaps WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0D1B3C91E3BCA03001EC57B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1B3D91E3BCA03001EC57B /* LaunchScreen.storyboard in Resources */,
+				D0D1B3D61E3BCA03001EC57B /* Assets.xcassets in Resources */,
+				D0D1B3D41E3BCA03001EC57B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1B3DB1E3BCA03001EC57B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1B3E61E3BCA03001EC57B /* Assets.xcassets in Resources */,
+				D0D1B3E41E3BCA03001EC57B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1B3EA1E3BCA03001EC57B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1B3FC1E3BCA03001EC57B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0D1B3C71E3BCA03001EC57B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1B3D11E3BCA03001EC57B /* ViewController.swift in Sources */,
+				D0D1B3CF1E3BCA03001EC57B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D1B3E81E3BCA03001EC57B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D1B3F81E3BCA03001EC57B /* NotificationController.swift in Sources */,
+				D0D1B3FA1E3BCA03001EC57B /* ComplicationController.swift in Sources */,
+				D0D1B3F61E3BCA03001EC57B /* ExtensionDelegate.swift in Sources */,
+				D0D1B3F41E3BCA03001EC57B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0D1B3E01E3BCA03001EC57B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D1B3DC1E3BCA03001EC57B /* BlindTaps WatchKit App */;
+			targetProxy = D0D1B3DF1E3BCA03001EC57B /* PBXContainerItemProxy */;
+		};
+		D0D1B3EF1E3BCA03001EC57B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D1B3EB1E3BCA03001EC57B /* BlindTaps WatchKit Extension */;
+			targetProxy = D0D1B3EE1E3BCA03001EC57B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D0D1B3D21E3BCA03001EC57B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D1B3D31E3BCA03001EC57B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D1B3D71E3BCA03001EC57B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D1B3D81E3BCA03001EC57B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D1B3E21E3BCA03001EC57B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D1B3E31E3BCA03001EC57B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0D1B3FE1E3BCA03001EC57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0D1B3FF1E3BCA03001EC57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D1B4011E3BCA03001EC57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3HPBXSSCP4;
+				INFOPLIST_FILE = "BlindTaps WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianbuck.BlindTaps.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D0D1B4021E3BCA03001EC57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 3HPBXSSCP4;
+				INFOPLIST_FILE = "BlindTaps WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianbuck.BlindTaps.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		D0D1B4051E3BCA03001EC57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3HPBXSSCP4;
+				IBSC_MODULE = BlindTaps_WatchKit_Extension;
+				INFOPLIST_FILE = "BlindTaps WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianbuck.BlindTaps.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		D0D1B4061E3BCA03001EC57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3HPBXSSCP4;
+				IBSC_MODULE = BlindTaps_WatchKit_Extension;
+				INFOPLIST_FILE = "BlindTaps WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianbuck.BlindTaps.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		D0D1B4091E3BCA03001EC57B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3HPBXSSCP4;
+				INFOPLIST_FILE = BlindTaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianbuck.BlindTaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D0D1B40A1E3BCA03001EC57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3HPBXSSCP4;
+				INFOPLIST_FILE = BlindTaps/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.brianbuck.BlindTaps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0D1B3C61E3BCA03001EC57B /* Build configuration list for PBXProject "BlindTaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1B3FE1E3BCA03001EC57B /* Debug */,
+				D0D1B3FF1E3BCA03001EC57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D1B4001E3BCA03001EC57B /* Build configuration list for PBXNativeTarget "BlindTaps WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1B4011E3BCA03001EC57B /* Debug */,
+				D0D1B4021E3BCA03001EC57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0D1B4041E3BCA03001EC57B /* Build configuration list for PBXNativeTarget "BlindTaps WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1B4051E3BCA03001EC57B /* Debug */,
+				D0D1B4061E3BCA03001EC57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D0D1B4081E3BCA03001EC57B /* Build configuration list for PBXNativeTarget "BlindTaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D1B4091E3BCA03001EC57B /* Debug */,
+				D0D1B40A1E3BCA03001EC57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0D1B3C31E3BCA03001EC57B /* Project object */;
+}
